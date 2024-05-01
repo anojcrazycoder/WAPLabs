@@ -1,0 +1,31 @@
+body{
+    background-color:#222222;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+h1{
+font-family: 'Times New Roman', serif;
+font-size: 36px;
+font-weight: bold;
+color: #00ffff;
+text-align: left;
+padding: 20px;
+}
+h2{
+    color:lightseagreen;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#header span{
+    color:orange;
+}
+#movieList li a {
+    color:red;
+}
+a>img{
+    width: 200px;
+    height: 110px;
+}
+#mood>img{
+    width:200px;
+    height:200px;
+   }
