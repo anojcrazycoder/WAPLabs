@@ -1,0 +1,22 @@
+body{
+    background-color: teal;
+}
+pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 24px;
+    color: #61dafb;
+}
+
+h1{
+    text-align: center;
+   
+}
