@@ -30,7 +30,7 @@ let group1 = {
 group1.showList();
 console.log("\n\n");
 
-// Solution 2: variable pointing to this
+// Solution 2: Arrow Function
 console.log("=======Arrow function===========")
 let group2 = {
   title: "Our Group",
@@ -38,13 +38,13 @@ let group2 = {
   showList: function() {
     this.students.forEach((student) => {
       console.log(this.title + ": " + student);
-    }); // Arrow functions do not have their own 'this'
+    }); 
   }
 };
 group2.showList();
 console.log("\n\n");
 
-//Solution-3: Assigning this to a variable:
+//Solution-3: Use Self
 console.log("=======Assigning this to a variable===========")
 let group3 = {
   title: "Our Group",
@@ -59,16 +59,16 @@ let group3 = {
 group2.showList();
 console.log("\n\n");
 
-//Solution-4: Using ES6 Functio
-console.log("=======ES6 Function===========")
+//Solution-4: Using a for...of Loop
+console.log("=======Using a for...of Loop===========")
 let group4 = {
   title: "Our Group",
   students: ["John", "Pete", "Alice"],
-  showList() { // Using ES6 shorthand method definition
-      this.students.forEach(function (student) {
-          console.log(this.title + ": " + student);
-      }, this); // Pass `this` as the second argument to `forEach`
-  }
+  showList: function() {
+    for (let student of this.students) {
+        console.log(this.title + ": " + student);
+    }
+}
 };
 group4.showList();
 console.log("\n\n");
