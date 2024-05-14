@@ -1,0 +1,10 @@
+            Output
+------------------
+The program outputs "Josh Edward". Initially, in pattern1, a function called 'getFirstName'
+is added to 'exports', which serves as the default 'module.exports'. Then, 'exports' is reassigned to a new object 
+containing a function called 'getLastName'. This reassignment does not correspond to the original 'module.exports';
+instead, it points to a new object.
+
+Ultimately, 'module.exports' is defined to contain a function. Since 'module.exports' is what gets exported when 
+called by 'require', and it now contains a function, when 'getName()' is invoked after being assigned with 'require',
+it simply executes what is defined in the function, which is to print "Josh Edward

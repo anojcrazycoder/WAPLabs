@@ -1,0 +1,6 @@
+An error occurs when executing this code. When 'require' is used 
+on a JavaScript file, the exports of that module are returned. 
+In this case, our exports is an object containing a function named 
+'getName', which gets assigned to 'getName' in app.js. Consequently,
+'getName' cannot be directly called because it doesn't exist in the global scope. 
+It should be invoked as 'getName.getName()
