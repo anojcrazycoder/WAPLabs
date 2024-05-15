@@ -6,7 +6,7 @@ router.get('',(req,res,next)=>{
     res.sendFile((path.join(__dirname,'..','views','products.html')));
 });
 
-router.get('add-product',(req,res)=>{
+router.get('/add-product',(req,res)=>{
     res.sendFile((path.join(__dirname,'..','views','productCreate.html')));
 })
 router.post('',express.urlencoded({ extended: true }),(req,res,next)=>{
