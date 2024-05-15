@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="/productForm.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/products" method="POST">
+        <div>
+            <label for="productDesignation">Product Designation:</label>
+            <input id="productDesignation" name="productDesignation" type="text" required>
+        </div>
+        <div>
+            <label for="retailPrice">Retail Price:</label>
+            <input id="retailPrice" name="retailPrice" type="number" step=".01" required>
+        </div>
+        <div>
+            <label for="productType">Product Type:</label>
+            <input id="productType" name="productType" type="text" required>
+        </div>
+        <div>
+            <button type="submit">Add to Inventory</button>
+        </div>
+    </form>
+</body>
+</html>
