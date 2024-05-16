@@ -1,0 +1,29 @@
+
+GET http://localhost:3500/books
+
+###
+GET http://localhost:3500/books/2
+
+###
+POST http://localhost:3500/books
+Content-Type: application/json
+
+ {
+        "title": "The Chronicles of Narnia----New",
+        "isbn": "978-0066238500",
+        "publishedDate": "1956-10-16",
+        "author": "C.S. Lewis"
+ }
+
+###
+DELETE http://localhost:3500/books/2
+
+###
+PUT http://localhost:3500/books/2
+
+ {
+        "title": "Muna Madan---",
+        "isbn": "978-0066238500---",
+        "publishedDate": "1956-10-16---",
+        "author": "Laxmi Prasad Devkkota--"
+ }
