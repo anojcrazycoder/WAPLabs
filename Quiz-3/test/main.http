@@ -1,0 +1,19 @@
+GET http://localhost:2500/books/2
+
+###
+POST  http://localhost:2500/books
+Content-Type: application/json
+
+{
+    "title": "React",
+    "author": {
+        "authorId": 311,
+        "firstname": "Ram",
+        "lastname": "Shrestha"
+    }
+}
+
+
+###
+GET 
+http://localhost:2500/books?firstname=A
